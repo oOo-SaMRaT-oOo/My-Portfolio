@@ -473,7 +473,7 @@ adapt, and build the foundation for the future I’m now working toward. ”
 
 
 with c2:
-    img_base64 = load_image_base64(r"pages/Images/LA.jpg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/LA.jpg")
 
     st.html(f"""
 <style>
@@ -584,7 +584,7 @@ something bigger — and every small step, every class, every mistake along the 
 
 
 with c2:
-    img_base64 = load_image_base64(r"pages/Images/laschool.jpg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/laschool.jpg")
     st.html(f"""
 <style>
 .animated-img {{
@@ -645,6 +645,7 @@ st.markdown("""
 <div class="butterfly" style="animation-delay: -12s; font-size: 25px;">🌟</div>
 <div class="butterfly" style="animation-delay -25s; font-size: 30px; opacity: 0.7;">🌟</div>
 """, unsafe_allow_html=True)
+
 
 
 
