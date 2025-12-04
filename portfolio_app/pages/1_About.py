@@ -363,7 +363,7 @@ strengths and slowly becoming a more confident engineer. ”
 
 
 with c2:
-    img_base64 = load_image_base64(r"pages/Images/Pulchowk.jpeg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/Pulchowk.jpeg")
     st.html(f"""
 <style>
 .animated-img {{
@@ -645,6 +645,7 @@ st.markdown("""
 <div class="butterfly" style="animation-delay: -12s; font-size: 25px;">🌟</div>
 <div class="butterfly" style="animation-delay -25s; font-size: 30px; opacity: 0.7;">🌟</div>
 """, unsafe_allow_html=True)
+
 
 
 
