@@ -257,7 +257,7 @@ with c1:
 
 
 with c2:
-    img_base64 = load_image_base64(r"portfolio_app/Images/Data_Analyzer.jpeg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/Data_Analyzer.jpeg")
     st.html(f"""
 <style>
 .fade-up-img {{
@@ -376,7 +376,7 @@ with c1:
 
 
 with c2:
-    img_base64 = load_image_base64(r"portfolio_app/Images/RLC.jpg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/RLC.jpg")
     st.html(f"""
 <style>
 .fade-in-slide {{
@@ -436,3 +436,4 @@ st.markdown("""
             
 
 """, unsafe_allow_html=True)
+
