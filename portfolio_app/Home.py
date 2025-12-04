@@ -39,10 +39,14 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+import os
+
 def load_image_base64(path):
-    with open(path, "rb") as f:
+    abs_path = os.path.join(os.path.dirname(__file__), path)  # <— FIX HERE
+    with open(abs_path, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
+
 
 st.set_page_config(
     page_title = "Its me, Samrat Malla",
