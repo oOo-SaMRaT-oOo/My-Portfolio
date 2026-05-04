@@ -257,7 +257,7 @@ with c1:
 
 
 with c2:
-    img_base64 = load_image_base64(r"portfolio_app/pages/Images/Data_Analyzer.jpeg")
+    img_base64 = load_image_base64(r"pages/Images/Data_Analyzer.jpeg")
     st.html(f"""
 <style>
 .fade-up-img {{
@@ -376,7 +376,7 @@ with c1:
 
 
 with c2:
-    img_base64 = load_image_base64(r"portfolio_app/pages/Images/RLC.jpg")
+    img_base64 = load_image_base64(r"pages/Images/RLC.jpg")
     st.html(f"""
 <style>
 .fade-in-slide {{
@@ -434,6 +434,154 @@ st.markdown("""
 <div class="butterfly" style="animation-delay -12s; font-size: 40px; opacity: 0.7;">🔧</div>
 
             
-
 """, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    .my-purpose-title-2025 {
+        font-family: 'Great Vibes', cursive !important;
+        font-size: 48px !important;
+        line-height: 1.1;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+        text-align: left;
+        color: #FFB6C1 !important;
+        text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+        opacity: 0;                     /* Start hidden */
+        transform: translateX(-120px);  /* Start off-screen */
+        animation: slideIn 1.8s ease-out forwards;
+    }
+
+    @keyframes slideInPurpose {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<div class="my-purpose-title-2025">
+    Digital Clock :<br>
+</div>
+""", unsafe_allow_html=True)
+
+c1,c2 = st.columns([5,3])
+with c1:
+    st.html("""
+<link href="https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap" rel="stylesheet">
+
+<style>
+    .normal-text {
+        font-family: 'Monotype Corsiva', cursive;
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 1.4;
+        text-align: left;
+        opacity: 0;
+        transform: translateX(-100px);
+        animation: slideIn 1.8s ease-out forwards, glow 3s ease-in-out infinite alternate 1.8s;
+    }
+
+    @keyframes slideIn {
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #00ff9f; }
+        to { text-shadow: 0 0 20px #ff00ff; }
+    }
+
+    .github-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #00ff9f;
+        font-size: 26px;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0 0 15px #00ff9f;
+        transition: all 0.3s;
+    }
+
+    .github-link:hover {
+        color: #ff00ff;
+        text-shadow: 0 0 25px #ff00ff;
+        transform: scale(1.1);
+    }
+</style>
+
+<div class="normal-text">
+    <br>The Digital Clock Simulation is an interactive Streamlit application that 
+            visualizes a fully engineered digital timing system in real time. Built 
+            by combining Simulink-based counter logic with Python and custom 7-segment 
+            rendering, it transforms raw digital signals into a live animated clock 
+            display. From 50 Hz clock generation to modular counters and visual
+             decoding, the app lets you experience how real digital systems operate
+             — all through a clean, responsive, and real-time interface.<br><br>
+            
+    <a href="https://github.com/oOo-SaMRaT-oOo/Digital_Clock_Simulink_Python" target="_blank" class="github-link">
+    View in GitHub →
+    </a>
+</div>
+""")
+    
+    
+
+
+with c2:
+    img_base64 = load_image_base64(r"pages/Images/clock.png")
+    st.html(f"""
+<style>
+.fade-in-slide {{
+    animation: fadeInUp 1.5s ease-out forwards;
+    border-radius: 20px;
+}}
+@keyframes fadeInUp {{
+    from {{ opacity: 0; transform: translateY(40px); }}
+    to   {{ opacity: 1; transform: translateY(0); }}
+}}
+</style>
+
+<img src="data:image/jpeg;base64,{img_base64}" class="fade-in-slide" width="300">
+""")
+    
+
+
+    img_base64 = load_image_base64(r"pages/Images/model.png")
+    st.html(f"""
+<style>
+.fade-in-slide {{
+    animation: fadeInUp 1.5s ease-out forwards;
+    border-radius: 20px;
+}}
+@keyframes fadeInUp {{
+    from {{ opacity: 0; transform: translateY(40px); }}
+    to   {{ opacity: 1; transform: translateY(0); }}
+}}
+</style>
+
+<img src="data:image/jpeg;base64,{img_base64}" class="fade-in-slide" width="300">
+""")
+
+    
+st.write("---")
+
+
+
+
+
+
+
+
+
 
