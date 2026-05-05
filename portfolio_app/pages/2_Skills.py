@@ -6,39 +6,74 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
-    /* Your beautiful sidebar */
+    /* 1. Dynamic Width Logic - Shrunk by default, expands on hover */
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg,#0c1b33,#172a45);
-        box-shadow: 0 0 20px #00b7ff;
-        backdrop-filter: blur(10px);
+        /* Adjusted width to fit "Interests" comfortably in shrunk mode */
+        width: 160px !important; 
+        min-width: 160px !important;
+        background: rgba(12, 27, 51, 0.8) !important;
+        backdrop-filter: blur(15px) saturate(180%);
+        border-right: 1px solid rgba(0, 183, 255, 0.3);
+        box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+        
+        /* Smooth transition for the 'opening' effect */
+        transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                    min-width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     }
+
+    /* Expands to normal size when mouse enters sidebar area */
+    [data-testid="stSidebar"]:hover {
+        width: 320px !important;
+        min-width: 320px !important;
+    }
+
+    /* 2. Text and Font Styling */
     [data-testid="stSidebar"], [data-testid="stSidebar"] * {
         font-family: 'Dancing Script', cursive !important;
         font-weight: 600 !important;
         font-size: 1.5rem !important;
         color: #a0e7ff !important;
         text-shadow: 0 0 10px #00b7ff;
-    }
-    [data-testid="stSidebarNavLink"][aria-selected="true"] {
-        background: #00b7ff33 !important;
-        border-left: 5px solid #00ffff;
-    }
-    [data-testid="stSidebarNavLink"]:hover {
-        background: #00ffff33 !important;
+        white-space: nowrap; /* Prevents text wrapping when narrow */
     }
 
-    /* ONLY removes the ugly black bar — sidebar still works 100% */
+    /* 3. INTERACTIVE NAVIGATION */
+    [data-testid="stSidebarNavLink"] {
+        border-radius: 12px;
+        margin: 8px 12px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    }
+
+    [data-testid="stSidebarNavLink"]:hover {
+        background: rgba(0, 255, 255, 0.15) !important;
+        transform: translateX(8px) scale(1.02);
+        box-shadow: -5px 0px 15px rgba(0, 255, 255, 0.4);
+        color: #ffffff !important;
+    }
+
+    [data-testid="stSidebarNavLink"][aria-selected="true"] {
+        background: linear-gradient(90deg, rgba(0,183,255,0.3), transparent) !important;
+        border-left: 5px solid #00ffff !important;
+        text-shadow: 0 0 15px #00ffff;
+    }
+
+    /* --- THE KILLER FIXES FOR "KEYBOARD" / TOGGLE TEXT --- */
+    [data-testid="stSidebar"] button span,
+    [data-testid="stSidebar"] div[class*="st-key"],
+    [data-testid="stSidebarCollapseButton"] {
+        display: none !important;
+        font-size: 0 !important;
+        visibility: hidden !important;
+    }
+
+    /* Cleanup Header */
     header[data-testid="stHeader"] {
         background: rgba(0,0,0,0) !important;
         box-shadow: none !important;
     }
-    /* Hide only the dark background, not the collapse button */
-    [data-testid="stHeader"]::before,
-    [data-testid="stHeader"]::after {
-        background: none !important;
-    }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 st.markdown("""
