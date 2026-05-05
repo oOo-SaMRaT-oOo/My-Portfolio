@@ -4,6 +4,7 @@ import base64
 
 st.set_page_config(page_title="Projects", page_icon="🚀")
 
+@st.cache_data
 def load_image_base64(path: str) -> str:
     """Load an image and return its Base64 string."""
     with open(path, "rb") as f:
