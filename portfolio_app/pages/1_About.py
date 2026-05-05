@@ -397,7 +397,7 @@ strengths and slowly becoming a more confident engineer. ”
 
 
 with c2:
-    img_base64 = load_image_base64(r"pages/Images/Pulchowk.jpeg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/Pulchowk.jpeg")
     st.html(f"""
 <style>
 .animated-img {{
@@ -507,7 +507,7 @@ adapt, and build the foundation for the future I’m now working toward. ”
 
 
 with c2:
-    img_base64 = load_image_base64(r"pages/Images/LA.jpg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/LA.jpg")
 
     st.html(f"""
 <style>
@@ -618,7 +618,7 @@ something bigger — and every small step, every class, every mistake along the 
 
 
 with c2:
-    img_base64 = load_image_base64(r"pages/Images/laschool.jpg")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/laschool.jpg")
     st.html(f"""
 <style>
 .animated-img {{
