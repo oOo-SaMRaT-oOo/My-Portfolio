@@ -86,6 +86,7 @@ st.markdown("""
 
 import os
 
+@st.cache_data
 def load_image_base64(path):
     abs_path = os.path.join(os.path.dirname(__file__), path)  # <— FIX HERE
     with open(abs_path, "rb") as f:
