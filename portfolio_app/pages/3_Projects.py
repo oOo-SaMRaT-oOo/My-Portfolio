@@ -319,7 +319,7 @@ with c2:
 """)
     
 
-    img_base64 = load_image_base64(r"pages/Images/WattVision.png")
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/WattVision.png")
     st.html(f"""
 <style>
 .fade-up-img {{
