@@ -282,6 +282,130 @@ st.write("---")
 
 
 
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    .my-purpose-title-2025 {
+        font-family: 'Great Vibes', cursive !important;
+        font-size: 48px !important;
+        line-height: 1.1;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+        text-align: left;
+        color: #FFB6C1 !important;
+        text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+        opacity: 0;                     /* Start hidden */
+        transform: translateX(-120px);  /* Start off-screen */
+        animation: slideIn 1.8s ease-out forwards;
+    }
+
+    @keyframes slideInPurpose {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<div class="my-purpose-title-2025">
+    🎥 Creating, Sharing & Inspiring 🚀 <br>
+</div>
+""", unsafe_allow_html=True)
+
+
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap');
+
+    .intro-text {
+        font-family: 'Monotype Corsiva', cursive;
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 1.4;
+        text-align: left;
+
+        opacity: 0;
+        transform: translateX(-100px);
+
+        animation:
+            slideIn 1.8s ease-out forwards,
+            glow 3s ease-in-out infinite alternate 1.8s;
+    }
+
+    @keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 8px #00c6ff;
+        }
+
+        to {
+            text-shadow: 0 0 20px #ff6b6b;
+        }
+    }
+
+    .highlight-name:hover {
+        color: #ff6b6b;
+        text-shadow: 0 0 35px #F39C12;
+        transform: scale(1.15);
+        transition: all 0.4s;
+    }
+
+    </style>
+
+    <div class="intro-text"><br>
+
+    “ Beyond engineering, I love creating and sharing ideas with the world.
+    From guitar covers and musical creativity to showcasing engineering projects,
+    content creation allows me to inspire, teach, and connect with people globally.
+    Whether through YouTube, GitHub, or digital platforms, I enjoy turning passion
+    into something meaningful and impactful. ”
+
+    </div>
+
+""", unsafe_allow_html=True)
+
+
+    
+st.write("---")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 st.markdown("""
