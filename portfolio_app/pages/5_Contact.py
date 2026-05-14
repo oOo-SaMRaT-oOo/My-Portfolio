@@ -204,9 +204,9 @@ st.markdown("""
         text-align: left;
         color: #FFB6C1 !important;
         text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
-        opacity: 0;                     /* Start hidden */
-        transform: translateX(-120px);  /* Start off-screen */
-        animation: slideIn 1.8s ease-out forwards;
+        opacity: 0;
+        transform: translateX(-120px);
+        animation: slideInPurpose 1.8s ease-out forwards;
     }
 
     @keyframes slideInPurpose {
@@ -218,15 +218,19 @@ st.markdown("""
 </style>
 
 <div class="my-purpose-title-2025">
-    <style>
+
+<style>
   a {
     text-decoration: none;
-    color: #0077cc; /* calm blue */
+    color: #8fd3ff; /* softer blue */
     font-weight: bold;
     transition: 0.3s;
+    text-shadow: none;   /* removes constant glow */
+    opacity: 0.92;       /* softer appearance */
   }
+
   a:hover {
-    color: #ff6600; /* playful orange glow */
+    color: #ff6600;
     text-shadow: 0px 0px 8px rgba(255, 102, 0, 0.6);
   }
 </style>
@@ -239,14 +243,34 @@ st.markdown("""
 
 🌐 Facebook Link : &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.facebook.com/samrat.malla.591855" target="_blank">
-    Samrat Malla </a><br><br>
-            
+    Samrat Malla
+</a>
+<br><br>
+
+🎶 Singing Channel Link : &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/@SamratMalla2062" target="_blank">
+    Samrat Malla
+</a>
+<br><br>
+
+❤️ Engineering Channel Link : &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/@TheElectroCoder" target="_blank">
+    The Electro Coder
+</a>
+<br><br>
+
 🐛 GitHub Link : &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/oOo-SaMRaT-oOo" target="_blank">oOo-Samrat-oOo </a><br>
-                
+<a href="https://github.com/oOo-SaMRaT-oOo" target="_blank">
+    oOo-Samrat-oOo
+</a><br><br>
+            
+💬 LinkedInLink : &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/samrat-malla-13a661364/" target="_blank">
+    Samrat Malla
+</a><br>
+
 </div>
 """, unsafe_allow_html=True)
-
 
 st.markdown("""
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
