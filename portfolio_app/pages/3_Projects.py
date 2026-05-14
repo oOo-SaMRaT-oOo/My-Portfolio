@@ -4,7 +4,6 @@ import base64
 
 st.set_page_config(page_title="Projects", page_icon="🚀")
 
-@st.cache_data
 def load_image_base64(path: str) -> str:
     """Load an image and return its Base64 string."""
     with open(path, "rb") as f:
@@ -199,6 +198,12 @@ explore how I bring ideas to life with Python and a passion for innovation.
 
 st.write("---")
 
+
+
+
+
+
+
 st.markdown("""
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
@@ -226,7 +231,7 @@ st.markdown("""
 </style>
 
 <div class="my-purpose-title-2025">
-    Data Analyzer :<br>
+    WattVision : AI <br>
 </div>
 """, unsafe_allow_html=True)
 
@@ -270,31 +275,34 @@ with c1:
     </style>
 
     <div class="normal-text"><br>
-    Data Analyzer is a Python-built Streamlit web app that 
-    lets users upload Excel files and instantly visualize data through
-    bar charts, 2D plots, and trend graphs. It also provides statistical 
-    analysis, forecasting, interpolation, and normalized comparisons — making 
-    data exploration simple, fast, and effective.<br><br>
+    Watt Vision AI is a real-time Streamlit application that visualizes
+    an engineered energy disaggregation system. By combining XGBoost machine learning with
+    advanced electrical signature analysis, it transforms raw power data into an 
+    interactive appliance dashboard. From signature extraction to neural decoding, the app 
+    showcases real-time smart-grid operations through a clean and responsive digital
+    interface.<br><br>
                 
-    <a href="https://datavisualizerappbysamratmalla.streamlit.app/" target="_blank" class="github-link">
-    View App → 
+    <a href="https://youtu.be/KjxofRIu8Zo?si=LKBwp_qOgQCXcTME" target="_blank" class="github-link">
+    View Demo → 
     </a>
     <br>
-    <a href="https://github.com/oOo-SaMRaT-oOo/Data-Visualizer-App" target="_blank" class="github-link">
-    View Code →
+    <a href="https://github.com/oOo-SaMRaT-oOo/WattVision-AI" target="_blank" class="github-link">
+    View in GitHub →
     </a>
                 
     
                 
     </div>
     """, unsafe_allow_html=True)
-    
-    
-    
 
+
+
+st.write("---")
 
 with c2:
-    img_base64 = load_image_base64(r"portfolio_app/pages/Images/Data_Analyzer.jpeg")
+
+    st.markdown("<br><br>",unsafe_allow_html=True)
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/WattVisionLogo.png")
     st.html(f"""
 <style>
 .fade-up-img {{
@@ -309,114 +317,12 @@ with c2:
 
 <img src="data:image/jpeg;base64,{img_base64}" class="fade-up-img" width="300">
 """)
-
-    
-st.write("---")
-
-
-
-
-
-st.markdown("""
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-<style>
-    .my-purpose-title-2025 {
-        font-family: 'Great Vibes', cursive !important;
-        font-size: 48px !important;
-        line-height: 1.1;
-        margin: 0 !important;
-        padding: 10px 0 !important;
-        text-align: left;
-        color: #FFB6C1 !important;
-        text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
-        opacity: 0;                     /* Start hidden */
-        transform: translateX(-120px);  /* Start off-screen */
-        animation: slideIn 1.8s ease-out forwards;
-    }
-
-    @keyframes slideInPurpose {
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-</style>
-
-<div class="my-purpose-title-2025">
-    Rlc Analyzer :<br>
-</div>
-""", unsafe_allow_html=True)
-
-c1,c2 = st.columns([5,3])
-with c1:
-    st.html("""
-<link href="https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap" rel="stylesheet">
-
-<style>
-    .normal-text {
-        font-family: 'Monotype Corsiva', cursive;
-        font-size: 25px;
-        color: #ffffff;
-        line-height: 1.4;
-        text-align: left;
-        opacity: 0;
-        transform: translateX(-100px);
-        animation: slideIn 1.8s ease-out forwards, glow 3s ease-in-out infinite alternate 1.8s;
-    }
-
-    @keyframes slideIn {
-        to { opacity: 1; transform: translateX(0); }
-    }
-
-    @keyframes glow {
-        from { text-shadow: 0 0 10px #00ff9f; }
-        to { text-shadow: 0 0 20px #ff00ff; }
-    }
-
-    .github-link {
-        display: inline-block;
-        margin-top: 20px;
-        color: #00ff9f;
-        font-size: 26px;
-        text-decoration: none;
-        font-weight: bold;
-        text-shadow: 0 0 15px #00ff9f;
-        transition: all 0.3s;
-    }
-
-    .github-link:hover {
-        color: #ff00ff;
-        text-shadow: 0 0 25px #ff00ff;
-        transform: scale(1.1);
-    }
-</style>
-
-<div class="normal-text">
-    <br>The RLC Analyzer is an interactive Streamlit application that lets you explore 
-    and simulate the behavior of series RLC circuits. By combining symbolic math with
-    real-time visualization, the app helps you analyze current, voltage, resonance, 
-    damping, and system response with ease. Just input your circuit parameters and 
-    instantly see both the mathematical solution and its graphical interpretation.<br><br>
-            
-    <a href="https://rlcanalyzerappbysamratmalla.streamlit.app/" target="_blank" class="github-link">
-    View App →
-    </a>
-    <br>
-    <a href="https://github.com/oOo-SaMRaT-oOo/RLC-Analyzer-App" target="_blank" class="github-link">
-    View Code →
-    </a>
-</div>
-""")
-    
     
 
-
-with c2:
-    img_base64 = load_image_base64(r"portfolio_app/pages/Images/RLC.jpg")
+    img_base64 = load_image_base64(r"pages/Images/WattVision.png")
     st.html(f"""
 <style>
-.fade-in-slide {{
+.fade-up-img {{
     animation: fadeInUp 1.5s ease-out forwards;
     border-radius: 20px;
 }}
@@ -426,58 +332,9 @@ with c2:
 }}
 </style>
 
-<img src="data:image/jpeg;base64,{img_base64}" class="fade-in-slide" width="300">
+<img src="data:image/jpeg;base64,{img_base64}" class="fade-up-img" width="300">
 """)
-
     
-st.write("---")
-
-
-
-
-
-
-
-
-
-
-
-st.markdown("""
-<style>
-/* Flying butterfly emoji – works perfectly */
-.butterfly {
-    position: fixed;
-    font-size: 20px;
-    pointer-events: none;
-    z-index: 10;
-    animation: fly 38s infinite linear;
-    opacity: 0.9;
-    filter: drop-shadow(0 0 15px #00ffff);
-    user-select: none;
-}
-
-@keyframes fly {
-    0%   { left: -10%; top: 20%; transform: rotate(20deg); }
-    15%  { left: 25%;  top: 70%; transform: rotate(-50deg); }
-    35%  { left: 65%;  top: 15%; transform: rotate(80deg) scaleX(-1); }
-    55%  { left: 90%;  top: 75%; transform: rotate(-40deg) scaleX(-1); }
-    75%  { left: 35%;  top: 85%; transform: rotate(60deg); }
-    100% { left: -10%; top: 20%; transform: rotate(20deg); }
-}
-</style>
-
-<div class="butterfly">🔧</div>
-<div class="butterfly" style="animation-delay: -12s; font-size: 35px;">🔧</div>
-<div class="butterfly" style="animation-delay -12s; font-size: 40px; opacity: 0.7;">🔧</div>
-
-            
-""", unsafe_allow_html=True)
-
-
-
-
-
-
 
 
 
@@ -612,6 +469,293 @@ with c2:
 
     
 st.write("---")
+
+
+
+
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    .my-purpose-title-2025 {
+        font-family: 'Great Vibes', cursive !important;
+        font-size: 48px !important;
+        line-height: 1.1;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+        text-align: left;
+        color: #FFB6C1 !important;
+        text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+        opacity: 0;                     /* Start hidden */
+        transform: translateX(-120px);  /* Start off-screen */
+        animation: slideIn 1.8s ease-out forwards;
+    }
+
+    @keyframes slideInPurpose {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<div class="my-purpose-title-2025">
+    Data Analyzer :<br>
+</div>
+""", unsafe_allow_html=True)
+
+c1,c2 = st.columns([5,3])
+with c1:
+    st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap');
+
+    .normal-text {
+        font-family: 'Monotype Corsiva', cursive;
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 1;
+        text-align: left;
+        opacity: 0;
+        transform: translateX(-100px);
+        animation: slideIn 1.8s ease-out forwards, glow 3s ease-in-out infinite alternate 1.8s;
+    }
+
+    @keyframes slideIn {
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    .github-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #00ff9f;
+        font-size: 26px;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0 0 15px #00ff9f;
+        transition: all 0.3s;
+    }
+
+    .github-link:hover {
+        color: #ff00ff;
+        text-shadow: 0 0 25px #ff00ff;
+        transform: scale(1.1);
+    }
+    </style>
+
+    <div class="normal-text"><br>
+    Data Analyzer is a Python-built Streamlit web app that 
+    lets users upload Excel files and instantly visualize data through
+    bar charts, 2D plots, and trend graphs. It also provides statistical 
+    analysis, forecasting, interpolation, and normalized comparisons — making 
+    data exploration simple, fast, and effective.<br><br>
+                
+    <a href="https://datavisualizerappbysamratmalla.streamlit.app/" target="_blank" class="github-link">
+    View Streamlit App → 
+    </a>
+    <br>
+    <a href="https://github.com/oOo-SaMRaT-oOo/Data-Visualizer-App" target="_blank" class="github-link">
+    View in GitHub →
+    </a>
+                
+    
+                
+    </div>
+    """, unsafe_allow_html=True)
+    
+    
+    
+
+
+with c2:
+    st.markdown("<br>",unsafe_allow_html=True)
+
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/Data_Analyzer.jpeg")
+    st.html(f"""
+<style>
+.fade-up-img {{
+    animation: fadeInUp 1.5s ease-out forwards;
+    border-radius: 20px;
+}}
+@keyframes fadeInUp {{
+    from {{ opacity: 0; transform: translateY(40px); }}
+    to   {{ opacity: 1; transform: translateY(0); }}
+}}
+</style>
+
+<img src="data:image/jpeg;base64,{img_base64}" class="fade-up-img" width="300">
+""")
+
+    
+st.write("---")
+
+
+
+
+
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    .my-purpose-title-2025 {
+        font-family: 'Great Vibes', cursive !important;
+        font-size: 48px !important;
+        line-height: 1.1;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+        text-align: left;
+        color: #FFB6C1 !important;
+        text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+        opacity: 0;                     /* Start hidden */
+        transform: translateX(-120px);  /* Start off-screen */
+        animation: slideIn 1.8s ease-out forwards;
+    }
+
+    @keyframes slideInPurpose {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<div class="my-purpose-title-2025">
+    Rlc Analyzer :<br>
+</div>
+""", unsafe_allow_html=True)
+
+c1,c2 = st.columns([5,3])
+with c1:
+    st.html("""
+<link href="https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap" rel="stylesheet">
+
+<style>
+    .normal-text {
+        font-family: 'Monotype Corsiva', cursive;
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 1.4;
+        text-align: left;
+        opacity: 0;
+        transform: translateX(-100px);
+        animation: slideIn 1.8s ease-out forwards, glow 3s ease-in-out infinite alternate 1.8s;
+    }
+
+    @keyframes slideIn {
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #00ff9f; }
+        to { text-shadow: 0 0 20px #ff00ff; }
+    }
+
+    .github-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #00ff9f;
+        font-size: 26px;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0 0 15px #00ff9f;
+        transition: all 0.3s;
+    }
+
+    .github-link:hover {
+        color: #ff00ff;
+        text-shadow: 0 0 25px #ff00ff;
+        transform: scale(1.1);
+    }
+</style>
+
+<div class="normal-text">
+    <br>The RLC Analyzer is an interactive Streamlit application that lets you explore 
+    and simulate the behavior of series RLC circuits. By combining symbolic math with
+    real-time visualization, the app helps you analyze current, voltage, resonance, 
+    damping, and system response with ease. Just input your circuit parameters and 
+    instantly see both the mathematical solution and its graphical interpretation.<br><br>
+            
+    <a href="https://rlcanalyzerappbysamratmalla.streamlit.app/" target="_blank" class="github-link">
+    View Streamlit App →
+    </a>
+    <br>
+    <a href="https://github.com/oOo-SaMRaT-oOo/RLC-Analyzer-App" target="_blank" class="github-link">
+    View in GitHub →
+    </a>
+</div>
+""")
+    
+    
+
+
+with c2:
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/RLC.jpg")
+    st.html(f"""
+<style>
+.fade-in-slide {{
+    animation: fadeInUp 1.5s ease-out forwards;
+    border-radius: 20px;
+}}
+@keyframes fadeInUp {{
+    from {{ opacity: 0; transform: translateY(40px); }}
+    to   {{ opacity: 1; transform: translateY(0); }}
+}}
+</style>
+
+<img src="data:image/jpeg;base64,{img_base64}" class="fade-in-slide" width="300">
+""")
+
+    
+st.write("---")
+
+
+
+
+
+
+
+
+
+
+
+st.markdown("""
+<style>
+/* Flying butterfly emoji – works perfectly */
+.butterfly {
+    position: fixed;
+    font-size: 20px;
+    pointer-events: none;
+    z-index: 10;
+    animation: fly 38s infinite linear;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px #00ffff);
+    user-select: none;
+}
+
+@keyframes fly {
+    0%   { left: -10%; top: 20%; transform: rotate(20deg); }
+    15%  { left: 25%;  top: 70%; transform: rotate(-50deg); }
+    35%  { left: 65%;  top: 15%; transform: rotate(80deg) scaleX(-1); }
+    55%  { left: 90%;  top: 75%; transform: rotate(-40deg) scaleX(-1); }
+    75%  { left: 35%;  top: 85%; transform: rotate(60deg); }
+    100% { left: -10%; top: 20%; transform: rotate(20deg); }
+}
+</style>
+
+<div class="butterfly">🔧</div>
+<div class="butterfly" style="animation-delay: -12s; font-size: 35px;">🔧</div>
+<div class="butterfly" style="animation-delay -12s; font-size: 40px; opacity: 0.7;">🔧</div>
+
+            
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
 
 
 
