@@ -247,12 +247,6 @@ st.markdown("""
 </a>
 <br><br>
 
-🎶 Singing Channel Link : &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.youtube.com/@SamratMalla2062" target="_blank">
-    Samrat Malla
-</a>
-<br><br>
-
 ❤️ Engineering Channel Link : &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.youtube.com/@TheElectroCoder" target="_blank">
     The Electro Coder
