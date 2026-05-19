@@ -199,6 +199,121 @@ explore how I bring ideas to life with Python and a passion for innovation.
 st.write("---")
 
 
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    .my-purpose-title-2025 {
+        font-family: 'Great Vibes', cursive !important;
+        font-size: 48px !important;
+        line-height: 1.1;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+        text-align: left;
+        color: #FFB6C1 !important;
+        text-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+        opacity: 0;                     /* Start hidden */
+        transform: translateX(-120px);  /* Start off-screen */
+        animation: slideIn 1.8s ease-out forwards;
+    }
+
+    @keyframes slideInPurpose {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<div class="my-purpose-title-2025">
+    VoltFix : AI <br>
+</div>
+""", unsafe_allow_html=True)
+
+c1,c2 = st.columns([5,3])
+with c1:
+    st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap');
+
+    .normal-text {
+        font-family: 'Monotype Corsiva', cursive;
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 1;
+        text-align: left;
+        opacity: 0;
+        transform: translateX(-100px);
+        animation: slideIn 1.8s ease-out forwards, glow 3s ease-in-out infinite alternate 1.8s;
+    }
+
+    @keyframes slideIn {
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    .github-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #00ff9f;
+        font-size: 26px;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0 0 15px #00ff9f;
+        transition: all 0.3s;
+    }
+
+    .github-link:hover {
+        color: #ff00ff;
+        text-shadow: 0 0 25px #ff00ff;
+        transform: scale(1.1);
+    }
+    </style>
+
+    <div class="normal-text"><br>
+    VoltFix AI is a real-time Streamlit application that visualizes
+    an engineered fault isolation system. By combining machine learning classifiers with
+    advanced electrical transient telemetry, it transforms raw wave data into an
+    interactive microgrid dashboard. From anomaly tracking to neural decoding, the app
+    showcases real-time smart-relay operations through a clean and responsive digital
+    interface.<br><br>
+                
+    <a href="https://github.com/oOo-SaMRaT-oOo/VoltFix-AI" target="_blank" class="github-link">
+    View in GitHub →
+    </a>
+                
+    
+                
+    </div>
+    """, unsafe_allow_html=True)
+
+
+
+with c2:
+
+    img_base64 = load_image_base64(r"portfolio_app/pages/Images/VoltFix.png")
+    st.html(f"""
+<style>
+.fade-up-img {{
+    animation: fadeInUp 1.5s ease-out forwards;
+    border-radius: 20px;
+}}
+@keyframes fadeInUp {{
+    from {{ opacity: 0; transform: translateY(40px); }}
+    to   {{ opacity: 1; transform: translateY(0); }}
+}}
+</style>
+
+<img src="data:image/jpeg;base64,{img_base64}" class="fade-up-img" width="300">
+""")
+
+
+    
+    
+
+st.write("---")
+
+
+
 
 
 
