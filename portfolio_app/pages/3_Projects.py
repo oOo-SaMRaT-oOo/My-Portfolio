@@ -540,7 +540,7 @@ with c1:
 
     <a href="https://youtu.be/X4Vdv0YzCKs?si=B5b5yx0UY3_ZKFF9" target="_blank" class="github-link">
     View Demo →
-    </a> <br><br>
+    </a> <br>
             
     <a href="https://github.com/oOo-SaMRaT-oOo/Digital_Clock_Simulink_Python" target="_blank" class="github-link">
     View in GitHub →
