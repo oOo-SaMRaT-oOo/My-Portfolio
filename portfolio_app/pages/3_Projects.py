@@ -537,6 +537,10 @@ with c1:
             display. From 50 Hz clock generation to modular counters and visual
              decoding, the app lets you experience how real digital systems operate
              — all through a clean, responsive, and real-time interface.<br><br>
+
+    <a href="https://youtu.be/X4Vdv0YzCKs?si=B5b5yx0UY3_ZKFF9" target="_blank" class="github-link">
+    View Demo →
+    </a> <br><br>
             
     <a href="https://github.com/oOo-SaMRaT-oOo/Digital_Clock_Simulink_Python" target="_blank" class="github-link">
     View in GitHub →
